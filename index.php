@@ -2,9 +2,8 @@
 
     use App\AffichageConditions;
     use App\DonneesMeteo;
-    require_once ('src/DonneesMeteo.php'); 
-    require_once ('src/Affichage.php'); 
-    require_once ('src/AffichageConditions.php'); 
+
+    require_once ('libraries/autoload.php');
 
     $donneesMeteo = new DonneesMeteo();
     $affichageConditions = new AffichageConditions($donneesMeteo);
